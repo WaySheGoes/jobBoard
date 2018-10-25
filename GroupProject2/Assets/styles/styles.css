@@ -1,0 +1,98 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	background-color: #1798c1;
+}
+
+#headerContainer{
+	text-align: center;
+	color: white;
+}
+
+.container{
+	margin-bottom: 50px;
+}
+
+#navbar{
+	background-color: white;
+	color: black;
+}
+
+#linksRow{
+	margin-top: 50px;
+	height: 20px;
+}
+
+.postCard{
+	background-color: white;
+	border-radius: 25px;
+	margin-bottom: 40px;
+	padding-bottom: 20px;
+}
+
+.table{
+    text-align: center;
+}
+
+form{
+	margin-top: 25px;
+}
+
+.perspective {
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    perspective: 800px;
+    display: inline-block;
+}
+
+.btn {
+    border: none;
+    color: white;
+    background: #1DC1DD;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn-8 {
+    display: block;
+    background: #5cbcf6;
+    outline: 1px solid transparent;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.btn-8a:after {
+    width: 100%;
+    height: 42%;
+    left: 0;
+    top: -40%;
+    background: #E7B689;
+    -webkit-transform-origin: 0% 100%;
+    -webkit-transform: rotateX(90deg);
+    -moz-transform-origin: 0% 100%;
+    -moz-transform: rotateX(90deg);
+    transform-origin: 0% 100%;
+    transform: rotateX(90deg);
+}
+
+.btn-8a:hover {
+    color: black;
+    -webkit-transform: rotateX(-15deg);
+    -moz-transform: rotateX(-15deg);
+    -ms-transform: rotateX(-15deg);
+    transform: rotateX(-15deg);
+}
+
+.buttonRow{
+    text-align: center;
+}

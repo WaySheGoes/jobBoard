@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Job Board</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="Assets\scripts\script.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="Assets\styles\styles.css">
+</head>
+<body>
+	<nav class="navbar navbar-default">  
+        <a class="navbar-brand" href="#"><b>Job Board<b/></a>   
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="">Submit a Job</a></li>
+            <li><a href="http://pi.cs.oswego.edu/~awalts2/Fall2018/ISCCapstone/Assignments/GroupProject2/Assets/scripts/viewJobs.php">View Jobs</a></li>
+            <li><a href="">View Applications</a></li>
+        </ul>
+	</nav>
+	<div class="container">
+		<div id="headerContainer" class="page-header">
+			<h1>Submit a Job</h1>
+		</div>
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2 postCard">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<form>
+							<div class="form-group">
+	                            <label for="companyName">Company Name</label>
+	                            <input type="text" id="companyName" name="companyName" class="form-control">
+	                        </div>
+	                        <div class="form-group">
+	                            <label for="companyName">Job Title</label>
+	                            <input type="text" id="jobTitle" name="jobTitle" class="form-control">
+	                        </div>
+	                        <div class="form-group">
+	                            <label for="companyName">Contact Name</label>
+	                            <input type="text" id="contactName" name="contactName" class="form-control">
+	                        </div>
+	                        <div class="form-group">
+	                            <label for="email">Contact Email</label>
+	                            <input type="email" id="contactEmail" name="contactEmail" class="form-control">
+	                        </div>
+	                        <div class="form-group">
+	                            <label for="special">Job Description</label>
+	                            <textarea id="jobDescription" class="form-control" rows="4" name="description"></textarea>
+	                        </div>
+	                    </form>
+					</div>
+				</div>
+				<div class="buttonRow">
+	                <p class="perspective"><button class="btn btn-8 btn-8a">Submit</button></p>
+	            </div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
