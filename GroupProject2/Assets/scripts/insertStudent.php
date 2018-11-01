@@ -14,7 +14,7 @@
         <a class="navbar-brand" href="#"><b>Job Board<b/></a>   
         <ul class="nav navbar-nav">
             <li><a href="http://pi.cs.oswego.edu/~awalts2/Fall2018/ISCCapstone/Assignments/GroupProject2/index.html">Submit a Job</a></li>
-              <li><a href="http://pi.cs.oswego.edu/~awalts2/Fall2018/ISCCapstone/Assignments/GroupProject2/createStudents.html">Create a Student</a></li>
+            <li><a href="http://pi.cs.oswego.edu/~awalts2/Fall2018/ISCCapstone/Assignments/GroupProject2/createStudents.html">Create a Student</a></li>
             <li><a href="http://pi.cs.oswego.edu/~awalts2/Fall2018/ISCCapstone/Assignments/GroupProject2/Assets/scripts/viewJobs.php">View Jobs</a></li>
             <li><a href="http://pi.cs.oswego.edu/~awalts2/Fall2018/ISCCapstone/Assignments/GroupProject2/Assets/scripts/viewApplications.php">View Applications</a></li>
         </ul>
@@ -38,18 +38,15 @@
           exit;
         }
 
-        $companyName = $_GET["companyName"];
-        $jobTitle = $_GET["jobTitle"];
-        $contactName = $_GET["contactName"];
-        $contactEmail = $_GET["contactEmail"];
-        $jobDescription = $_GET["jobDescription"];
+        $studentName = $_GET["studentName"];
+        $studentEmail = $_GET["studentEmail"];
 
-        $insert = "INSERT INTO job (companyName, jobTitle, contactName, contactEmail, jobDescription) VALUES ('" . $companyName . "', '" . $jobTitle . "', '" . $contactName . "', '" . $contactEmail ."', '" . $jobDescription . "')";
+        $insert = "INSERT INTO student (studentName, studentEmail) VALUES ('" . $studentName . "', '" . $studentEmail . "')";
 
         if($link->query($insert)){
-          echo "Listing Submitted</h1></div>";
+          echo "Student Created</h1></div>";
           echo "<div class='row'>";
-          echo "<div class='buttonRow'><p class='perspective'><button id='submitAJob' class='btn btn-8 btn-8a'>Submit a Job</button></p></div>";
+          echo "<div class='buttonRow'><p class='perspective'><button id='createAStudent' class='btn btn-8 btn-8a'>Create a Student</button></p></div>";
           echo "</div>";
           echo "<div class='row'>";
           echo "<div class='buttonRow'><p class='perspective'><button id='viewApplications' class='btn btn-8 btn-8a'>View Applications</button></p></div>";
@@ -60,7 +57,7 @@
         } else {
           echo "Submission Failed</h1></div>";
           echo "<div class='row'>";
-          echo "<div class='buttonRow'><p class='perspective'><button id='submitAJob' class='btn btn-8 btn-8a'>Try Again</button></p></div>";
+          echo "<div class='buttonRow'><p class='perspective'><button id='createAStudent' class='btn btn-8 btn-8a'>Try Again</button></p></div>";
           echo "</div>";
           echo "<div class='row'>";
           echo "<div class='buttonRow'><p class='perspective'><button id='viewApplications' class='btn btn-8 btn-8a'>View Applications</button></p></div>";

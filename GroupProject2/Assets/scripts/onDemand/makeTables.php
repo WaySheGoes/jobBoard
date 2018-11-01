@@ -22,7 +22,17 @@
   }
   echo 'successful connection';
 
+  /*
   $create = "CREATE TABLE job (ID int NOT NULL AUTO_INCREMENT, companyName VARCHAR(100) NOT NULL, jobTitle VARCHAR(100) NOT NULL, contactName VARCHAR(100) NOT NULL, contactEmail VARCHAR(100) NOT NULL, jobDescription TEXT NOT NULL, PRIMARY KEY (ID))";
+  */
+
+  
+  /*$create = "CREATE TABLE application (ID int NOT NULL AUTO_INCREMENT, studentId int NOT NULL, jobId int NOT NULL, PRIMARY KEY (ID))";*/
+  
+
+  /*
+  $create = "CREATE TABLE student (ID int NOT NULL AUTO_INCREMENT, studentName VARCHAR(100) NOT NULL, studentEmail VARCHAR(100) NOT NULL, UNIQUE (studentEmail), PRIMARY KEY (ID))";
+  */
 
   if($link->query($create)){
     echo "Created";

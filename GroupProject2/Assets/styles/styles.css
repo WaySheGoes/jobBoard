@@ -93,6 +93,11 @@ form{
     transform: rotateX(-15deg);
 }
 
+.rowBtn{
+    height: 30px !important;
+    width: auto;
+}
+
 .buttonRow{
     text-align: center;
 }

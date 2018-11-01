@@ -38,37 +38,29 @@
           exit;
         }
 
-        $companyName = $_GET["companyName"];
-        $jobTitle = $_GET["jobTitle"];
-        $contactName = $_GET["contactName"];
-        $contactEmail = $_GET["contactEmail"];
-        $jobDescription = $_GET["jobDescription"];
+        $studentId = $_GET["studentId"];
+        $jobId = $_GET["jobId"];
 
-        $insert = "INSERT INTO job (companyName, jobTitle, contactName, contactEmail, jobDescription) VALUES ('" . $companyName . "', '" . $jobTitle . "', '" . $contactName . "', '" . $contactEmail ."', '" . $jobDescription . "')";
+        $insert = "INSERT INTO application (studentId, jobId) VALUES ('" . $studentId . "', '" . $jobId . "')";
 
         if($link->query($insert)){
-          echo "Listing Submitted</h1></div>";
+          echo "Application Submitted</h1></div>";
           echo "<div class='row'>";
-          echo "<div class='buttonRow'><p class='perspective'><button id='submitAJob' class='btn btn-8 btn-8a'>Submit a Job</button></p></div>";
+          echo "<div class='buttonRow'><p class='perspective'><button id='viewJobs' class='btn btn-8 btn-8a'>View Jobs</button></p></div>";
           echo "</div>";
           echo "<div class='row'>";
           echo "<div class='buttonRow'><p class='perspective'><button id='viewApplications' class='btn btn-8 btn-8a'>View Applications</button></p></div>";
-          echo "</div>";
-          echo "<div class='row'>";
-          echo "<div class='buttonRow'><p class='perspective'><button id='viewJobs' class='btn btn-8 btn-8a'>View Jobs</button></p></div>";
           echo "</div>";
         } else {
           echo "Submission Failed</h1></div>";
           echo "<div class='row'>";
-          echo "<div class='buttonRow'><p class='perspective'><button id='submitAJob' class='btn btn-8 btn-8a'>Try Again</button></p></div>";
+          echo "<div class='buttonRow'><p class='perspective'><button id='viewJobs' class='btn btn-8 btn-8a'>Try Again</button></p></div>";
           echo "</div>";
           echo "<div class='row'>";
-          echo "<div class='buttonRow'><p class='perspective'><button id='viewApplications' class='btn btn-8 btn-8a'>View Applications</button></p></div>";
-          echo "</div>";
-          echo "<div class='row'>";
-          echo "<div class='buttonRow'><p class='perspective'><button id='viewJobs' class='btn btn-8 btn-8a'>View Jobs</button></p></div>";
+          echo "<div class='buttonRow'><p class='perspective'><button id='viewApplications' class='btn btn-8 btn-8a'>Quit</button></p></div>";
           echo "</div>";
         }
+
         mysqli_close($link);
       ?>
   </div>
