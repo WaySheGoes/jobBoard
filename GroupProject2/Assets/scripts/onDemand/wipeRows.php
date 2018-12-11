@@ -14,10 +14,10 @@
     exit;
   }
 
-  $studentId = $_GET["studentId"];
-  $jobId = $_GET["jobId"];
+  //$studentId = $_GET["studentId"];
+  //$jobId = $_GET["jobId"];
 
-  $wipe = "DELETE FROM student WHERE ID IS NOT NULL";
+  $wipe = "DELETE FROM job WHERE ID IS NOT NULL";
 
   if($link->query($wipe)){
     echo "Cleared";

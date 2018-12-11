@@ -66,4 +66,7 @@ $(document).ready(function(){
 		result = result.slice(0, -1);
 		result = result.split(",");
 	}
+	
 });
+
+	
